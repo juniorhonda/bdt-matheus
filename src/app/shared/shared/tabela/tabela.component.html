@@ -14,7 +14,7 @@
             </tr>
         </thead>
         <tbody>
-            <tr *ngFor="let lista of list">
+            <tr *ngFor="let lista of listaViagem">
                 <td>{{lista.dataSaida}}</td>
                 <td>{{lista.horaSaida}}</td>
                 <td>{{lista.motorista}}</td>
@@ -27,4 +27,10 @@
             </tr>
         </tbody>
     </table>
+
+    Cadastar <input type="text" [(ngModel)]="id">
+
+    <input type="button" (click)="ObterPorId()" value="Obter Por ID">
+    <input type="button" (click)="Excluir()" value="Excluir">
+
 </div>
